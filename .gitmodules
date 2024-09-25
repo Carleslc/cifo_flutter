@@ -1,0 +1,12 @@
+[submodule "demo_counter"]
+	path = demo_counter
+	url = https://github.com/Carleslc/cifo_flutter_demo_counter.git
+	branch = master
+[submodule "activitat_1_generador_noms"]
+	path = activitat_1_generador_noms
+	url = https://github.com/Carleslc/cifo_flutter_generador_noms.git
+	branch = master
+[submodule "harry_potter_example"]
+	path = harry_potter_example
+	url = https://github.com/Carleslc/cifo_flutter_harry_potter_example.git
+	branch = master
