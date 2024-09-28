@@ -50,13 +50,16 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 
 - [API Docs](https://api.flutter.dev/)
 - [Flutter Docs](https://docs.flutter.dev/)
+- [Dart Style Guide](https://dart.dev/effective-dart)
 - [Material Widgets](https://docs.flutter.dev/ui/widgets/material)
 - [Cupertino Widgets](https://docs.flutter.dev/ui/widgets/cupertino)
+- [Layouts in Flutter](https://docs.flutter.dev/ui/layout)
 
 ### Code examples
 
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 - [Codelab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Navigation Cookbook](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 
 ### Apps and Widgets examples
 
