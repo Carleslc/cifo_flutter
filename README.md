@@ -54,12 +54,16 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Material Widgets](https://docs.flutter.dev/ui/widgets/material)
 - [Cupertino Widgets](https://docs.flutter.dev/ui/widgets/cupertino)
 - [Layouts in Flutter](https://docs.flutter.dev/ui/layout)
+- [Assets and images](https://docs.flutter.dev/ui/assets/assets-and-images)
+- [Asynchronous programming](https://dart.dev/libraries/async/async-await)
+- [JSON Serialization](https://docs.flutter.dev/data-and-backend/serialization/json)
 
 ### Code examples
 
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 - [Codelab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Navigation Cookbook](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
+- [Navigation](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
+- [Themes](https://docs.flutter.dev/cookbook/design/themes)
 
 ### Apps and Widgets examples
 
@@ -68,6 +72,18 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [flutter_catalog](https://github.com/X-Wei/flutter_catalog?tab=readme-ov-file#readme) ([web](https://x-wei.github.io/flutter_catalog/))
 - [flutter-examples](https://github.com/nisrulz/flutter-examples?tab=readme-ov-file#readme)
 - [material_3_demo](https://flutter.github.io/samples/web/material_3_demo/)
+- [Snackbar](https://docs.flutter.dev/cookbook/design/snackbars)
+- [Drawer](https://docs.flutter.dev/cookbook/design/drawer)
+- [Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+- [Introduction Screen](https://pub.dev/packages/introduction_screen)
+
+### State management
+
+- [Managing state](https://docs.flutter.dev/ui/interactivity#managing-state)
+- [Stateless vs. Stateful widgets](https://medium.com/@Thebro_11/diferencias-entre-stateless-y-stateful-widgets-3693e712ce98)
+- [When to use Keys](https://www.youtube.com/watch?v=kn0EOS-ZiIc)
+- [Provider](https://pub.dev/packages/provider)
+- [Riverpod](https://riverpod.dev/docs/introduction/why_riverpod) ([`riverpod`](https://pub.dev/packages/riverpod)) ([tutorial](https://codewithandrea.com/articles/flutter-state-management-riverpod/))
 
 ### Packages
 
@@ -76,13 +92,34 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 
 ### Icons
 
-- [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) [+info](https://developers.google.com/fonts/docs/material_symbols)
+- [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) [+info](https://developers.google.com/fonts/docs/material_symbols) ([`material_symbols_icons`](https://pub.dev/packages/material_symbols_icons))
 - [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
+- [Material Community Icons](https://pictogrammers.com/library/mdi/) ([`community_material_icon`](https://pub.dev/packages/community_material_icon))
+
+### Fonts
+
+- [Google Fonts](https://fonts.google.com/) ([`google_fonts`](https://pub.dev/packages/google_fonts))
+
+### Testing
+
+- [Testing Documentation](https://docs.flutter.dev/testing/overview)
+- [Mocking](https://pub.dev/packages/mocktail)
+
+### Release
+
+- [Release Documentation](https://docs.flutter.dev/deployment) ([android](https://docs.flutter.dev/deployment/android), [ios](https://docs.flutter.dev/deployment/ios))
+- [App Icon](https://docs.flutter.dev/ui/assets/assets-and-images#updating-the-app-icon) ([android](https://docs.flutter.dev/deployment/android#add-a-launcher-icon))
+- [Splash Screen](https://docs.flutter.dev/ui/assets/assets-and-images#updating-the-launch-screen) ([android](https://docs.flutter.dev/platform-integration/android/splash-screen), [ios](https://docs.flutter.dev/platform-integration/ios/splash-screen))
+- [Icon Kitchen](https://icon.kitchen/) / [Android: Image Asset Studio](https://developer.android.com/studio/write/create-app-icons)
+- [Bundle _google_fonts_ for release](https://pub.dev/packages/google_fonts#bundling-fonts-when-releasing)
 
 ### Other
 
 - [Awesome Flutter](https://github.com/Solido/awesome-flutter)
+- [Paletes de colors](https://coolors.co/)
+- [JSON to DataModels](https://app.quicktype.io/)
 - [Android API Levels](https://apilevels.com/)
+- [Free APIs](https://apipheny.io/free-api/)
 
 ## (Dev) Afegeix una aplicació
 
