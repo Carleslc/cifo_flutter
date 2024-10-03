@@ -4,6 +4,36 @@ Activitats i aplicacions del curs de Flutter al CIFO de l'Hospitalet 2024.
 
 Cada carpeta és una aplicació independent que conté un `README.md` amb detalls de l'aplicació corresponent.
 
+<!-- toc -->
+
+- [Importar una aplicació](#importar-una-aplicacio)
+  * [Desenvolupament a IDX](#desenvolupament-a-idx)
+  * [Desenvolupament local](#desenvolupament-local)
+- [Recursos](#recursos)
+  * [Documentation](#documentation)
+  * [Code examples](#code-examples)
+  * [Apps and Widgets examples](#apps-and-widgets-examples)
+  * [State management](#state-management)
+  * [Packages](#packages)
+  * [Icons](#icons)
+  * [Fonts](#fonts)
+  * [Testing](#testing)
+  * [Release](#release)
+  * [Other](#other)
+- [CLI](#cli)
+  * [Doctor](#doctor)
+  * [Dependències](#dependencies)
+  * [Configuració](#configuracio)
+  * [Linter](#linter)
+  * [Dispositius](#dispositius)
+  * [Connexió inal·làmbrica (Android)](#connexio-inal%C2%B7lambrica-android)
+  * [Build](#build)
+  * [Clean](#clean)
+  * [Dart](#dart)
+- [(Dev) Afegeix una aplicació](#dev-afegeix-una-aplicacio)
+
+<!-- tocstop -->
+
 ## Importar una aplicació
 
 ### Desenvolupament a IDX
@@ -54,9 +84,16 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Material Widgets](https://docs.flutter.dev/ui/widgets/material)
 - [Cupertino Widgets](https://docs.flutter.dev/ui/widgets/cupertino)
 - [Layouts in Flutter](https://docs.flutter.dev/ui/layout)
+- [Navigation](https://docs.flutter.dev/ui/navigation)
 - [Assets and images](https://docs.flutter.dev/ui/assets/assets-and-images)
 - [Asynchronous programming](https://dart.dev/libraries/async/async-await)
+- [Networking](https://docs.flutter.dev/data-and-backend/networking)
 - [JSON Serialization](https://docs.flutter.dev/data-and-backend/serialization/json)
+- [Persistence](https://docs.flutter.dev/data-and-backend/persistence)
+- [Responsive design](https://docs.flutter.dev/ui/adaptive-responsive)
+- [Animations and transitions](https://docs.flutter.dev/ui/animations)
+- [Accessibility](https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility)
+- [Internationalization](https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization)
 
 ### Code examples
 
@@ -73,14 +110,18 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [flutter-examples](https://github.com/nisrulz/flutter-examples?tab=readme-ov-file#readme)
 - [material_3_demo](https://flutter.github.io/samples/web/material_3_demo/)
 - [Snackbar](https://docs.flutter.dev/cookbook/design/snackbars)
-- [Drawer](https://docs.flutter.dev/cookbook/design/drawer)
 - [Dialog](https://api.flutter.dev/flutter/material/AlertDialog-class.html)
+- [Drawer](https://docs.flutter.dev/cookbook/design/drawer) / [NavigationDrawer](https://api.flutter.dev/flutter/material/NavigationDrawer-class.html)
+- [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html) / [NavigationBar](https://api.flutter.dev/flutter/material/NavigationBar-class.html)
+- [SafeArea](https://api.flutter.dev/flutter/widgets/SafeArea-class.html) & [MediaQuery](https://api.flutter.dev/flutter/widgets/MediaQuery-class.html)
+- [ThemeData](https://api.flutter.dev/flutter/material/ThemeData-class.html) ([ColorScheme](https://api.flutter.dev/flutter/material/ColorScheme-class.html), [TextTheme](https://api.flutter.dev/flutter/material/TextTheme-class.html))
 - [Introduction Screen](https://pub.dev/packages/introduction_screen)
 
 ### State management
 
 - [Managing state](https://docs.flutter.dev/ui/interactivity#managing-state)
 - [Stateless vs. Stateful widgets](https://medium.com/@Thebro_11/diferencias-entre-stateless-y-stateful-widgets-3693e712ce98)
+- [Widget Lifecycle](https://www.dhiwise.com/post/unveiling-the-flutter-widget-lifecycle) ([2](https://dev.to/pranjal-barnwal/the-journey-of-a-widget-understanding-the-lifecycle-in-flutter-3plp)) ([3](https://flutterexperts.com/explore-widget-lifecycle-in-flutter))
 - [When to use Keys](https://www.youtube.com/watch?v=kn0EOS-ZiIc)
 - [Provider](https://pub.dev/packages/provider)
 - [Riverpod](https://riverpod.dev/docs/introduction/why_riverpod) ([`riverpod`](https://pub.dev/packages/riverpod)) ([tutorial](https://codewithandrea.com/articles/flutter-state-management-riverpod/))
@@ -120,6 +161,132 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [JSON to DataModels](https://app.quicktype.io/)
 - [Android API Levels](https://apilevels.com/)
 - [Free APIs](https://apipheny.io/free-api/)
+
+## CLI
+
+### Doctor
+
+```sh
+# Verifica la instal·lació de Flutter
+flutter doctor
+
+# Mostra més informació
+flutter doctor -v
+
+# Mostra la versió de Flutter i Dart
+flutter --version
+
+# Actualitza Flutter
+flutter upgrade
+```
+
+### Dependències
+
+```sh
+# Instal·la les dependències
+flutter pub get
+
+# Afegeix una dependència
+flutter pub add google_fonts
+
+# Actualitza les dependències
+flutter pub upgrade
+
+# Elimina una dependència
+flutter pub remove google_fonts
+```
+
+### Configuració
+
+Activa o desactiva les plataformes suportades per `flutter create`:
+
+```sh
+flutter config --list
+flutter config --no-enable-linux-desktop
+flutter config --no-enable-macos-desktop
+flutter config --no-enable-windows-desktop
+flutter config --enable-android
+flutter config --enable-ios
+flutter config --enable-web
+```
+
+### Linter
+
+Al fitxer [`analysis_options.yaml`](https://dart.dev/guides/language/analysis-options) ([exemple](./harry_potter_example/analysis_options.yaml)) d'una aplicació es poden afegir [regles d'estil](https://dart.dev/tools/linter-rules) per fer el codi més robust i llegible, segons la [guia d'estil](https://dart.dev/effective-dart).
+
+```sh
+# Mostra els possibles problemes d'estil
+dart fix --dry-run
+
+# Corregeix els problemes d'estil trobats automàticament
+dart fix --apply
+```
+
+Si cal ignorar el warning d'una regla determinada, es pot afegir un comentari a la línia o fitxer corresponent:
+
+```dart
+// ignore: directives_ordering
+// ignore_for_file: directives_ordering
+```
+
+### Dispositius
+
+```sh
+# Dispositius connectats
+flutter devices
+
+# Captura de pantalla del dispositiu actual
+flutter screenshot
+
+# Simulador iOS (Xcode)
+open -a Simulator
+```
+
+### Connexió inal·làmbrica (Android)
+
+```sh
+# Comprova la IP del dispositiu connectat per USB
+adb devices -l
+
+# Connecta el dispositiu via TCP/IP
+adb tcpip 5555
+adb connect <IP>:5555
+```
+
+### Build
+
+```sh
+# Debug
+flutter run
+
+# Release
+flutter build apk --release
+
+# Instal·la l'aplicació al dispositiu
+adb install -r build/app/outputs/flutter-apk/app-release.apk
+
+# Instal·la l'aplicació en un dispositiu determinat (amb serial device-ID)
+adb -s device-ID install -r build/app/outputs/flutter-apk/app-release.apk
+
+# Desinstal·la l'aplicació del dispositiu
+adb uninstall com.example.demo_counter
+```
+
+### Clean
+
+Esborra els directoris relacionats amb `build`:
+
+```sh
+flutter clean
+```
+
+### Dart
+
+Executa codi Dart independent:
+
+```sh
+dart --enable-asserts fitxer.dart
+```
 
 ## (Dev) Afegeix una aplicació
 

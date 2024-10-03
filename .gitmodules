@@ -10,3 +10,7 @@
 	path = harry_potter_example
 	url = https://github.com/Carleslc/cifo_flutter_harry_potter_example.git
 	branch = master
+[submodule "activitat_2_fitness_time"]
+	path = activitat_2_fitness_time
+	url = https://github.com/Carleslc/cifo_flutter_fitness_time.git
+	branch = master
