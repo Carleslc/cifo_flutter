@@ -28,6 +28,7 @@ Cada carpeta és una aplicació independent que conté un `README.md` amb detall
   * [Dispositius](#dispositius)
   * [Connexió inal·làmbrica (Android)](#connexió-inallàmbrica-android)
   * [Build](#build)
+  * [CORS](#cors)
   * [Clean](#clean)
   * [Dart](#dart)
 - [(Dev) Afegeix una aplicació](#dev-afegeix-una-aplicació)
@@ -272,6 +273,24 @@ adb -s device-ID install -r build/app/outputs/flutter-apk/app-release.apk
 # Desinstal·la l'aplicació del dispositiu
 adb uninstall com.example.demo_counter
 ```
+
+### CORS
+
+A vegades a la web no es mostren les imatges correctament.
+
+Per solucionar-ho es pot canviar el mètode de renderitzat a l'hora d'executar l'aplicació:
+
+```sh
+# Debug on chrome to avoid CORS issues
+flutter run -d chrome --web-renderer html
+
+# Release for web with html renderer
+flutter build web --web-renderer html --release
+```
+
+Per executar-ho amb _Visual Studio Code_ afegeix la configuració de [`.vscode/launch.json`](harry_potter_example/.vscode/launch.json).
+
+Una alternativa per les imatges és utilitzar la llibreria [`image_network`](https://pub.dev/packages/image_network).
 
 ### Clean
 

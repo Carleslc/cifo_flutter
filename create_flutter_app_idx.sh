@@ -44,6 +44,12 @@ if [ ! -d "$NEW_APP_NAME/.idx" ]; then
     echo "Added: $NEW_APP_NAME/.idx"
 fi
 
+# Copia el directori .vscode de l'aplicació plantilla a la nova aplicació
+if [ ! -d "$NEW_APP_NAME/.vscode" ]; then
+    cp -r "$TEMPLATE_APP_NAME/.vscode" "$NEW_APP_NAME/.vscode"
+    echo "Added: $NEW_APP_NAME/.vscode"
+fi
+
 # Modifica automàticament el SDK version al pubspec.yaml per suportar la versió de IDX
 OLD_SDK_VERSION=$(sed -n '/environment:/,/sdk:/p' "$NEW_APP_NAME/pubspec.yaml" | grep sdk)
 sed -i '' "/environment:/,/sdk:/ s/sdk: .*/sdk: $SDK_VERSION/" "$NEW_APP_NAME/pubspec.yaml"
