@@ -6,7 +6,7 @@ Cada carpeta és una aplicació independent que conté un `README.md` amb detall
 
 <!-- toc -->
 
-- [Importar una aplicació](#importar-una-aplicacio)
+- [Importar una aplicació](#importar-una-aplicació)
   * [Desenvolupament a IDX](#desenvolupament-a-idx)
   * [Desenvolupament local](#desenvolupament-local)
 - [Recursos](#recursos)
@@ -22,15 +22,15 @@ Cada carpeta és una aplicació independent que conté un `README.md` amb detall
   * [Other](#other)
 - [CLI](#cli)
   * [Doctor](#doctor)
-  * [Dependències](#dependencies)
-  * [Configuració](#configuracio)
+  * [Dependències](#dependències)
+  * [Configuració](#configuració)
   * [Linter](#linter)
   * [Dispositius](#dispositius)
-  * [Connexió inal·làmbrica (Android)](#connexio-inal%C2%B7lambrica-android)
+  * [Connexió inal·làmbrica (Android)](#connexió-inallàmbrica-android)
   * [Build](#build)
   * [Clean](#clean)
   * [Dart](#dart)
-- [(Dev) Afegeix una aplicació](#dev-afegeix-una-aplicacio)
+- [(Dev) Afegeix una aplicació](#dev-afegeix-una-aplicació)
 
 <!-- tocstop -->
 
@@ -188,6 +188,7 @@ flutter pub get
 
 # Afegeix una dependència
 flutter pub add google_fonts
+flutter pub add flutter_localizations --sdk=flutter
 
 # Actualitza les dependències
 flutter pub upgrade
@@ -265,7 +266,7 @@ flutter build apk --release
 # Instal·la l'aplicació al dispositiu
 adb install -r build/app/outputs/flutter-apk/app-release.apk
 
-# Instal·la l'aplicació en un dispositiu determinat (amb serial device-ID)
+# Instal·la l'aplicació en un dispositiu determinat (amb serial device-ID, p.e. emulator-5554)
 adb -s device-ID install -r build/app/outputs/flutter-apk/app-release.apk
 
 # Desinstal·la l'aplicació del dispositiu
