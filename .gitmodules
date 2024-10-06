@@ -14,3 +14,7 @@
 	path = activitat_2_fitness_time
 	url = https://github.com/Carleslc/cifo_flutter_fitness_time.git
 	branch = master
+[submodule "weather_example"]
+	path = weather_example
+	url = https://github.com/Carleslc/cifo_flutter_weather_example.git
+	branch = master

@@ -116,6 +116,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [BottomNavigationBar](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html) / [NavigationBar](https://api.flutter.dev/flutter/material/NavigationBar-class.html)
 - [SafeArea](https://api.flutter.dev/flutter/widgets/SafeArea-class.html) & [MediaQuery](https://api.flutter.dev/flutter/widgets/MediaQuery-class.html)
 - [ThemeData](https://api.flutter.dev/flutter/material/ThemeData-class.html) ([ColorScheme](https://api.flutter.dev/flutter/material/ColorScheme-class.html), [TextTheme](https://api.flutter.dev/flutter/material/TextTheme-class.html))
+- [FutureBuilder](https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html)
 - [Introduction Screen](https://pub.dev/packages/introduction_screen)
 
 ### State management
