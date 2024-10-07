@@ -238,6 +238,9 @@ Si cal ignorar el warning d'una regla determinada, es pot afegir un comentari a 
 # Dispositius connectats
 flutter devices
 
+# Dispositius Android connectats
+adb devices -l
+
 # Captura de pantalla del dispositiu actual
 flutter screenshot
 
@@ -247,13 +250,15 @@ open -a Simulator
 
 ### Connexió inal·làmbrica (Android)
 
-```sh
-# Comprova la IP del dispositiu connectat per USB
-adb devices -l
+Comprova la IP del dispositiu connectat per USB a la configuració del dispositiu.
 
+```sh
 # Connecta el dispositiu via TCP/IP
 adb tcpip 5555
 adb connect <IP>:5555
+
+# Comproba els dispositius connectats
+adb devices -l
 ```
 
 ### Build
