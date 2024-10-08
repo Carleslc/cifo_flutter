@@ -122,6 +122,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 ### State management
 
 - [Managing state](https://docs.flutter.dev/ui/interactivity#managing-state)
+- [Simple app state management](https://docs.flutter.dev/data-and-backend/state-mgmt/simple)
 - [Stateless vs. Stateful widgets](https://medium.com/@Thebro_11/diferencias-entre-stateless-y-stateful-widgets-3693e712ce98)
 - [Widget Lifecycle](https://www.dhiwise.com/post/unveiling-the-flutter-widget-lifecycle) ([2](https://dev.to/pranjal-barnwal/the-journey-of-a-widget-understanding-the-lifecycle-in-flutter-3plp)) ([3](https://flutterexperts.com/explore-widget-lifecycle-in-flutter))
 - [When to use Keys](https://www.youtube.com/watch?v=kn0EOS-ZiIc)
@@ -138,10 +139,19 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Material Symbols](https://fonts.google.com/icons?icon.set=Material+Symbols) [+info](https://developers.google.com/fonts/docs/material_symbols) ([`material_symbols_icons`](https://pub.dev/packages/material_symbols_icons))
 - [Material Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
 - [Material Community Icons](https://pictogrammers.com/library/mdi/) ([`community_material_icon`](https://pub.dev/packages/community_material_icon))
+- [Freepik Icons](https://www.freepik.es/search?format=families&iconType=standard&last_filter=iconType&last_value=standard&shape=lineal-color&type=icon)
 
 ### Fonts
 
 - [Google Fonts](https://fonts.google.com/) ([`google_fonts`](https://pub.dev/packages/google_fonts))
+- [MixFont](https://www.mixfont.com/)
+
+## Design
+
+- [Figma](https://www.figma.com/) (Material Theme Builder)(https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder)
+- [Proto.io](https://proto.io/)
+- [marvelapp](https://marvelapp.com/)
+- [sketchize](https://www.sketchize.com/)
 
 ### Testing
 
