@@ -17,6 +17,9 @@ Cada carpeta és una aplicació independent que conté un `README.md` amb detall
   * [Packages](#packages)
   * [Icons](#icons)
   * [Fonts](#fonts)
+  * [Design](#design)
+    + [Colors](#colors)
+    + [Inspiration](#inspiration)
   * [Testing](#testing)
   * [Release](#release)
   * [Other](#other)
@@ -102,6 +105,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Codelab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Navigation](https://docs.flutter.dev/cookbook/navigation/navigation-basics)
 - [Themes](https://docs.flutter.dev/cookbook/design/themes)
+- [JSON Serialization](https://docs.flutter.dev/data-and-backend/serialization/json#setting-up-json_serializable-in-a-project) ([`json_serializable`](https://pub.dev/packages/json_serializable))
 
 ### Apps and Widgets examples
 
@@ -144,14 +148,26 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 ### Fonts
 
 - [Google Fonts](https://fonts.google.com/) ([`google_fonts`](https://pub.dev/packages/google_fonts))
+- [Font Space](https://www.fontspace.com/)
 - [MixFont](https://www.mixfont.com/)
 
-## Design
+### Design
 
 - [Figma](https://www.figma.com/) ([_Material Theme Builder_](https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder))
 - [Proto.io](https://proto.io/)
 - [marvelapp](https://marvelapp.com/)
 - [sketchize](https://www.sketchize.com/)
+
+#### Colors
+
+- [Coolors](https://coolors.co/)
+- [Picular](https://picular.co/)
+
+#### Inspiration
+
+- [Dribbble](https://dribbble.com/search/mobile-wireframe)
+- [Mobbin](https://mobbin.com/browse/android/apps)
+- [Android Niceties](https://androidniceties.tumblr.com/)
 
 ### Testing
 
@@ -169,7 +185,6 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 ### Other
 
 - [Awesome Flutter](https://github.com/Solido/awesome-flutter)
-- [Paletes de colors](https://coolors.co/)
 - [JSON to DataModels](https://app.quicktype.io/)
 - [Android API Levels](https://apilevels.com/)
 - [Free APIs](https://apipheny.io/free-api/)
@@ -274,20 +289,34 @@ adb devices -l
 ### Build
 
 ```sh
-# Debug
-flutter run
+# Executa l'aplicació
+flutter run # -h
+```
 
-# Release
+#### Android
+
+```sh
+flutter build apk --debug
 flutter build apk --release
 
 # Instal·la l'aplicació al dispositiu
+adb install -r build/app/outputs/flutter-apk/app-debug.apk
 adb install -r build/app/outputs/flutter-apk/app-release.apk
 
 # Instal·la l'aplicació en un dispositiu determinat (amb serial device-ID, p.e. emulator-5554)
+adb -s device-ID install -r build/app/outputs/flutter-apk/app-debug.apk
 adb -s device-ID install -r build/app/outputs/flutter-apk/app-release.apk
 
 # Desinstal·la l'aplicació del dispositiu
 adb uninstall com.example.demo_counter
+adb -s device-ID uninstall com.example.demo_counter
+```
+
+#### Web
+
+```sh
+flutter build web --debug
+flutter build web --release
 ```
 
 ### CORS
@@ -360,3 +389,25 @@ chmod +x create_flutter_app_idx.sh
 
 ./create_flutter_app_idx.sh new_app
 ```
+
+### (Dev) Table of contents
+
+Instal·la [markdown-toc](https://github.com/jonschlinkert/markdown-toc):
+
+```sh
+npm install -g markdown-toc
+```
+
+Afegeix aquesta línia al README on es vol insertar:
+
+```md
+<!-- toc -->
+```
+
+Genera el _Table of contents_:
+
+```sh
+markdown-toc -i README.md
+```
+
+**_Nota_**: Els enllaços a GitHub accepten accents, sense ells poden no funcionar.
