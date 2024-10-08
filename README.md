@@ -148,7 +148,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 
 ## Design
 
-- [Figma](https://www.figma.com/) (Material Theme Builder)(https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder)
+- [Figma](https://www.figma.com/) ([_Material Theme Builder_](https://www.figma.com/community/plugin/1034969338659738588/material-theme-builder))
 - [Proto.io](https://proto.io/)
 - [marvelapp](https://marvelapp.com/)
 - [sketchize](https://www.sketchize.com/)
