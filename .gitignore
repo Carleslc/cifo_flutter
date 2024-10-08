@@ -1,4 +1,7 @@
 # Miscellaneous
 .DS_Store
 
+# IDE
+.vscode/
+
 # Additional Flutter .gitignore files in subfolders
