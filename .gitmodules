@@ -18,3 +18,7 @@
 	path = weather_example
 	url = https://github.com/Carleslc/cifo_flutter_weather_example.git
 	branch = master
+[submodule "activitat_3_postal_code"]
+	path = activitat_3_postal_code
+	url = https://github.com/Carleslc/cifo_flutter_postal_code.git
+	branch = master
