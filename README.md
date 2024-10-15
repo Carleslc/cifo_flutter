@@ -133,6 +133,13 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Provider](https://pub.dev/packages/provider)
 - [Riverpod](https://riverpod.dev/docs/introduction/why_riverpod) ([`riverpod`](https://pub.dev/packages/riverpod)) ([tutorial](https://codewithandrea.com/articles/flutter-state-management-riverpod/))
 
+### Persistence
+
+- [Store key-value data on disk](https://docs.flutter.dev/cookbook/persistence/key-value) ([shared_preferences](https://pub.dev/packages/shared_preferences))
+- [Read and write files](https://docs.flutter.dev/cookbook/persistence/reading-writing-files) ([path_provider](https://pub.dev/packages/path_provider))
+- [Persist data with SQLite](https://docs.flutter.dev/cookbook/persistence/sqlite) ([sqflite](https://pub.dev/packages/sqflite))
+- [Persist data with Isar NoSQL](https://isar.dev/tutorials/quickstart.html) ([isar](https://pub.dev/packages/isar))
+
 ### Packages
 
 - [pub.dev](https://pub.dev/packages?sort=popularity)
