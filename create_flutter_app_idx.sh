@@ -9,7 +9,7 @@ set -e
 PLATFORMS="android,ios,web"
 
 # Dart SDK a utilitzar (versió suportada per IDX flutter --version)
-SDK_VERSION="'>=3.4.3'"
+SDK_VERSION="'>=3.4.3 <4.0.0'"
 
 # Nom de l'aplicació d'on copiar els fitxers
 TEMPLATE_APP_NAME="demo_counter"
