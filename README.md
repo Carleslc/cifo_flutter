@@ -191,6 +191,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Splash Screen](https://docs.flutter.dev/ui/assets/assets-and-images#updating-the-launch-screen) ([android](https://docs.flutter.dev/platform-integration/android/splash-screen), [ios](https://docs.flutter.dev/platform-integration/ios/splash-screen))
 - [Bundle _google_fonts_ for release](https://pub.dev/packages/google_fonts#bundling-fonts-when-releasing)
 - [Setup iOS localizations for App Store](https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization#localizing-for-ios-updating-the-ios-app-bundle)
+- [Google Play: Requisitos de pruebas de aplicaciones](https://support.google.com/googleplay/android-developer/answer/14151465?hl=es) ([20 Testers](https://medium.com/@banrossyn/20-testers-google-play-5361008bc24b))
 
 ### Other
 
