@@ -198,6 +198,12 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 
 - [Firebase Cloud Messaging](https://firebase.flutter.dev/docs/messaging/overview/)
 
+### Ads and in-app purchases
+
+- [AdMob](https://admob.google.com/intl/es-419/home/)
+- [Advertising](https://docs.flutter.dev/resources/ads-overview) ([`google_mobile_ads`](https://pub.dev/packages/google_mobile_ads))
+- [In-app purchases](https://docs.flutter.dev/resources/in-app-purchases-overview) ([`in_app_purchases`](https://pub.dev/packages/in_app_purchase))
+
 ### Other
 
 - [Awesome Flutter](https://github.com/Solido/awesome-flutter)
