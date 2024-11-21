@@ -181,6 +181,27 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Testing Documentation](https://docs.flutter.dev/testing/overview)
 - [Mocking](https://pub.dev/packages/mocktail)
 
+### Security
+
+- [.env management: `flutter_dotenv`](https://pub.dev/packages/flutter_dotenv)
+
+### Authentication
+
+- [Firebase Authentication](https://firebase.google.com/docs/auth?hl=es-419)
+- [Firebase Authentication in Flutter](https://firebase.google.com/docs/auth/flutter/start?hl=es-419)
+- [Tutorial: Flutter Registration & Login using Firebase](https://medium.com/code-for-cause/flutter-registration-login-using-firebase-5ada3f14c066)
+- [Firebase UI Auth: `firebase_ui_auth`](https://pub.dev/packages/firebase_ui_auth)
+
+### Cloud Storage
+
+- [Firebase Cloud Storage](https://firebase.google.com/docs/storage?hl=es-419)
+- [Firebase Cloud Storage with Flutter](https://firebase.google.com/docs/storage/flutter/start?hl=es-419)
+
+### Push Notifications
+
+- [Add Firebase to Flutter app](https://firebase.google.com/docs/flutter/setup?hl=es-419&platform=android)
+- [Firebase Cloud Messaging](https://firebase.flutter.dev/docs/messaging/overview/)
+
 ### Release
 
 - [Release Documentation](https://docs.flutter.dev/deployment) ([android](https://docs.flutter.dev/deployment/android), [ios](https://docs.flutter.dev/deployment/ios))
@@ -194,15 +215,13 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 - [Video: Publishing a Flutter App to the Play Store](https://www.youtube.com/watch?v=dR04ArAhxd4)
 - [Google Play: Requisitos de pruebas de aplicaciones](https://support.google.com/googleplay/android-developer/answer/14151465?hl=es) ([20 Testers](https://medium.com/@banrossyn/20-testers-google-play-5361008bc24b))
 
-### Push Notifications
-
-- [Firebase Cloud Messaging](https://firebase.flutter.dev/docs/messaging/overview/)
-
 ### Ads and in-app purchases
 
-- [AdMob](https://admob.google.com/intl/es-419/home/)
+- [AdMob](https://admob.google.com/intl/es-419/home/) ([Codelab: AdMob ads in Flutter](https://codelabs.developers.google.com/codelabs/admob-ads-in-flutter?hl=es-419#0))
 - [Advertising](https://docs.flutter.dev/resources/ads-overview) ([`google_mobile_ads`](https://pub.dev/packages/google_mobile_ads))
-- [In-app purchases](https://docs.flutter.dev/resources/in-app-purchases-overview) ([`in_app_purchases`](https://pub.dev/packages/in_app_purchase))
+- [In-app purchases](https://docs.flutter.dev/resources/in-app-purchases-overview)
+  - [Codelab: In-app purchases in Flutter](https://codelabs.developers.google.com/codelabs/flutter-in-app-purchases?hl=es-419#0)
+  - [`in_app_purchase`](https://pub.dev/packages/in_app_purchase)
 
 ### Other
 
@@ -318,8 +337,13 @@ flutter run # -h
 #### Android
 
 ```sh
+# APK
 flutter build apk --debug
 flutter build apk --release
+
+# App Bundle
+flutter build appbundle --debug
+flutter build appbundle --release
 
 # Instal·la l'aplicació al dispositiu
 adb install -r build/app/outputs/flutter-apk/app-debug.apk
@@ -332,6 +356,13 @@ adb -s device-ID install -r build/app/outputs/flutter-apk/app-release.apk
 # Desinstal·la l'aplicació del dispositiu
 adb uninstall com.example.demo_counter
 adb -s device-ID uninstall com.example.demo_counter
+```
+
+#### iOS
+
+```sh
+flutter build ios --debug
+flutter build ios --release
 ```
 
 #### Web
