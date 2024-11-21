@@ -195,12 +195,16 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 ### Cloud Storage
 
 - [Firebase Cloud Storage](https://firebase.google.com/docs/storage?hl=es-419)
-- [Firebase Cloud Storage with Flutter](https://firebase.google.com/docs/storage/flutter/start?hl=es-419)
+- [Firebase Cloud Storage in Flutter](https://firebase.google.com/docs/storage/flutter/start?hl=es-419)
 
 ### Push Notifications
 
 - [Add Firebase to Flutter app](https://firebase.google.com/docs/flutter/setup?hl=es-419&platform=android)
 - [Firebase Cloud Messaging](https://firebase.flutter.dev/docs/messaging/overview/)
+
+### Analytics
+
+- [Firebase Analytics in Flutter](https://firebase.google.com/docs/analytics/get-started?platform=flutter)
 
 ### Release
 
