@@ -205,6 +205,7 @@ Es pot executar l'aplicació amb `flutter run` o desde l'IDE.
 ### Analytics
 
 - [Firebase Analytics in Flutter](https://firebase.google.com/docs/analytics/get-started?platform=flutter)
+- [Firebase Crashlytics in Flutter](https://firebase.google.com/docs/crashlytics/get-started?platform=flutter)
 
 ### Release
 
