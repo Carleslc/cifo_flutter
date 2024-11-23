@@ -22,3 +22,7 @@
 	path = activitat_3_postal_code
 	url = https://github.com/Carleslc/cifo_flutter_postal_code.git
 	branch = master
+[submodule "fountains_app"]
+	path = fountains_app
+	url = https://github.com/Carleslc/fountains_app
+	branch = master
